@@ -19,7 +19,7 @@ export default function Post() {
     }`,
       )
       .then((data) => setPost(data))
-      .catch(console.error());
+      .catch(console.error);
   });
   return (
     <main className='bg-green-100 min-h-screen p-12'>
