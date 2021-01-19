@@ -21,6 +21,7 @@ export default function Post() {
       .then((data) => setPost(data))
       .catch(console.error);
   });
+
   return (
     <main className='bg-green-100 min-h-screen p-12'>
       <section className='container mx-auto'>
