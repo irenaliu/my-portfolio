@@ -10,10 +10,10 @@ export default function Navbar() {
           <NavLink
             to='/'
             exact
-            className='inline-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest'
+            className='inline-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold sans-serif tracking-widest'
             activeClassName='text-white'
           >
-            Home
+            Irena
           </NavLink>
           <NavLink
             to='/post'

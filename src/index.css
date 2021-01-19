@@ -1,9 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-.cursive {
-  font-family: 'Amatic SC', cursive;
+.sans-serif {
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
 
