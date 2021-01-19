@@ -52,10 +52,10 @@ export default function Project() {
                     {project.place}
                   </span>
                   <span>
-                    <strong className='font-bold'>Type</strong>:{' '}
+                    <strong className='font-bold capitalize'>Type</strong>:{' '}
                     {project.projectType}
                   </span>
-                  <p className='my-6 text-lg text-gray-700 leading-relaxed capitalize'>
+                  <p className='my-6 text-lg text-gray-700 leading-relaxed'>
                     {project.description}
                   </p>
                   <a
