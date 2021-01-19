@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { SocialIcon } from 'react-social-icons';
 
 export default function Navbar() {
   return (
@@ -9,7 +10,7 @@ export default function Navbar() {
           <NavLink
             to='/'
             exact
-            className='inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest'
+            className='inline-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold cursive tracking-widest'
             activeClassName='text-white'
           >
             Home
@@ -36,6 +37,29 @@ export default function Navbar() {
             About Me
           </NavLink>
         </nav>
+        <div className='inline-flex py-3 px-3 my-6'>
+          <SocialIcon
+            url='https://www.linkedin.com/in/irenaliu/'
+            className='mr-4'
+            target='_blank'
+            fgColor='#fff'
+            style={{ height: 35, width: 35 }}
+          />
+          <SocialIcon
+            url='https://github.com/irenaliu'
+            className='mr-4'
+            target='_blank'
+            fgColor='#fff'
+            style={{ height: 35, width: 35 }}
+          />
+          <SocialIcon
+            url='https://twitter.com/irenaliu'
+            className='mr-4'
+            target='_blank'
+            fgColor='#fff'
+            style={{ height: 35, width: 35 }}
+          />
+        </div>
       </div>
     </header>
   );
