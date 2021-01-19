@@ -55,7 +55,7 @@ export default function Project() {
                     <strong className='font-bold'>Type</strong>:{' '}
                     {project.projectType}
                   </span>
-                  <p className='my-6 text-lg text-gray-700 leading-relaxed'>
+                  <p className='my-6 text-lg text-gray-700 leading-relaxed capitalize'>
                     {project.description}
                   </p>
                   <a
