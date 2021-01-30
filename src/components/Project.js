@@ -23,7 +23,7 @@ export default function Project() {
 
   return (
     <main className='bg-green-100 min-h-screen p-12'>
-      <section className='container mx-auto'>
+      <section className='header-margin container mx-auto'>
         <h1 className='text-5xl flex justify-center sans-serif'>My Projects</h1>
         <h2 className='text-lg text-gray-600 flex justify-center mb-12'>
           Welcome to my projects page!
@@ -51,8 +51,8 @@ export default function Project() {
                     <strong className='font-bold'>Location</strong>:{' '}
                     {project.place}
                   </span>
-                  <span>
-                    <strong className='font-bold capitalize'>Type</strong>:{' '}
+                  <span className='capitalize'>
+                    <strong className='font-bold'>Type</strong>:{' '}
                     {project.projectType}
                   </span>
                   <p className='my-6 text-lg text-gray-700 leading-relaxed'>
