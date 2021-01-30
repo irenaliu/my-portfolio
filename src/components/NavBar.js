@@ -1,11 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { SocialIcon } from 'react-social-icons';
 
 export default function Navbar() {
   return (
-    <header className='bg-red-600'>
-      <div className='container mx-auto flex justify-between'>
+    <header className='bg-primary opacity-80 absolute inset-x-0 top-0'>
+      <div className='container mx-auto'>
         <nav className='flex'>
           <NavLink
             to='/'
@@ -15,51 +14,30 @@ export default function Navbar() {
           >
             Irena
           </NavLink>
-          <NavLink
-            to='/post'
-            className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
-            activeClassName='text-red-100 bg-red-700'
-          >
-            Blog Posts
-          </NavLink>
-          <NavLink
-            to='/project'
-            className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
-            activeClassName='text-red-100 bg-red-700'
-          >
-            Projects
-          </NavLink>
-          <NavLink
-            to='/about'
-            className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
-            activeClassName='text-red-100 bg-red-700'
-          >
-            About Me
-          </NavLink>
+          <div className='ml-auto'>
+            <NavLink
+              to='/post'
+              className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
+              activeClassName='text-red-100 bg-red-700'
+            >
+              Blog Posts
+            </NavLink>
+            <NavLink
+              to='/project'
+              className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
+              activeClassName='text-red-100 bg-red-700'
+            >
+              Projects
+            </NavLink>
+            <NavLink
+              to='/about'
+              className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
+              activeClassName='text-red-100 bg-red-700'
+            >
+              About Me
+            </NavLink>
+          </div>
         </nav>
-        <div className='inline-flex py-3 px-3 my-6'>
-          <SocialIcon
-            url='https://www.linkedin.com/in/irenaliu/'
-            className='mr-4'
-            target='_blank'
-            fgColor='#fff'
-            style={{ height: 35, width: 35 }}
-          />
-          <SocialIcon
-            url='https://github.com/irenaliu'
-            className='mr-4'
-            target='_blank'
-            fgColor='#fff'
-            style={{ height: 35, width: 35 }}
-          />
-          <SocialIcon
-            url='https://twitter.com/irenaliu'
-            className='mr-4'
-            target='_blank'
-            fgColor='#fff'
-            style={{ height: 35, width: 35 }}
-          />
-        </div>
       </div>
     </header>
   );

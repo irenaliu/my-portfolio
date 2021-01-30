@@ -9,7 +9,6 @@ import Navbar from './components/NavBar';
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <Switch>
         <Route component={Home} path='/' exact />
         <Route component={About} path='/about' />
@@ -17,6 +16,7 @@ function App() {
         <Route component={Post} path='/post' />
         <Route component={Project} path='/project' />
       </Switch>
+      <Navbar />
     </BrowserRouter>
   );
 }
