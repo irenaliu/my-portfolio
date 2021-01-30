@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import sanityClient from '../client.js';
-import background from '../background.jpg';
+import background from '../assets/background.jpg';
 import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
 
@@ -28,8 +28,12 @@ export default function About() {
   if (!author) return <div> Loading...</div>;
 
   return (
-    <main className='relative'>
-      <img src={background} alt='Trees and river' className='absolute w-full' />
+    <main>
+      <img
+        src={background}
+        alt='Trees and river'
+        className='absolute w-full h-full'
+      />
       <div className='p-10 lg:pt-48 container mx-auto relative'>
         <section className='bg-green-800 rounded-lg shadow-2xl lg:flex p-20'>
           <img
