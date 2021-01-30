@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 export default function Navbar() {
   return (
@@ -9,30 +10,38 @@ export default function Navbar() {
           <NavLink
             to='/'
             exact
-            className='inline-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-800 text-4xl font-bold sans-serif tracking-widest'
-            activeClassName='text-white'
+            className='inline-flex items-center py-6 px-3 mr-4 text-gray-lightest hover:text-white text-4xl font-bold sans-serif tracking-widest'
+            activeClassName='text-secondary'
           >
-            Irena
+            <img src={logo} alt='Website Logo' className='w-12' />
           </NavLink>
           <div className='ml-auto'>
             <NavLink
+              to='/'
+              exact
+              className='inline-flex items-center py-3 px-3 my-6 rounded text-gray-lightest hover:text-white'
+              activeClassName='text-secondary'
+            >
+              Home
+            </NavLink>
+            <NavLink
               to='/post'
-              className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
-              activeClassName='text-red-100 bg-red-700'
+              className='inline-flex items-center py-3 px-3 my-6 rounded text-gray-lightest hover:text-white'
+              activeClassName='text-secondary'
             >
               Blog Posts
             </NavLink>
             <NavLink
               to='/project'
-              className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
-              activeClassName='text-red-100 bg-red-700'
+              className='inline-flex items-center py-3 px-3 my-6 rounded text-gray-lightest hover:text-white'
+              activeClassName='text-secondary'
             >
               Projects
             </NavLink>
             <NavLink
               to='/about'
-              className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
-              activeClassName='text-red-100 bg-red-700'
+              className='inline-flex items-center py-3 px-3 my-6 rounded text-gray-lightest hover:text-white'
+              activeClassName='text-secondary'
             >
               About Me
             </NavLink>
