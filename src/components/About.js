@@ -32,7 +32,7 @@ export default function About() {
       <img
         src={background}
         alt='Trees and river'
-        className='absolute w-full h-full'
+        className='absolute object-cover w-full h-full'
       />
       <div className='p-10 lg:pt-48 container mx-auto relative'>
         <section className='bg-green-800 rounded-lg shadow-2xl lg:flex p-20'>

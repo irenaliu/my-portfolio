@@ -22,7 +22,7 @@ export default function Project() {
   }, []);
 
   return (
-    <main className='bg-green-100 min-h-screen p-12'>
+    <main className='bg-green-100 min-h-screen max-h-screen p-12'>
       <section className='header-margin container mx-auto'>
         <h1 className='text-5xl flex justify-center sans-serif'>My Projects</h1>
         <h2 className='text-lg text-gray-600 flex justify-center mb-12'>
