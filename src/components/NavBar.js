@@ -37,28 +37,28 @@ export default function Navbar({ fixed }) {
               <NavLink
                 to='/'
                 exact
-                className='inline-flex items-center py-3 px-3 my-6 rounded text-gray-lightest hover:text-white'
+                className='inline-flex items-center py-3 px-3 lg:my-6 rounded text-gray-lightest hover:text-white'
                 activeClassName='text-secondary'
               >
                 Home
               </NavLink>
               <NavLink
                 to='/post'
-                className='inline-flex items-center py-3 px-3 my-6 rounded text-gray-lightest hover:text-white'
+                className='inline-flex items-center py-3 px-3 lg:my-6 rounded text-gray-lightest hover:text-white'
                 activeClassName='text-secondary'
               >
                 Blog Posts
               </NavLink>
               <NavLink
                 to='/project'
-                className='inline-flex items-center py-3 px-3 my-6 rounded text-gray-lightest hover:text-white'
+                className='inline-flex items-center py-3 px-3 lg:my-6 rounded text-gray-lightest hover:text-white'
                 activeClassName='text-secondary'
               >
                 Projects
               </NavLink>
               <NavLink
                 to='/about'
-                className='inline-flex items-center py-3 px-3 my-6 rounded text-gray-lightest hover:text-white'
+                className='inline-flex items-center py-3 px-3 lg:my-6 rounded text-gray-lightest hover:text-white'
                 activeClassName='text-secondary'
               >
                 About Me
