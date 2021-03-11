@@ -43,8 +43,8 @@ export default function About() {
           />
           <div className='text-lg flex flex-col justify-center'>
             <h1 className='sans-serif text-6xl text-green-300 mb-4'>
-              Hey there. I'm{' '}
-              <span className='text-green-100'>{author.name}</span>
+              Hey there. I'm
+              <span className='text-green-100'>{' ' + author.name}</span>
             </h1>
             <div className='prose lg:prose-xl text-white'>
               <BlockContent
